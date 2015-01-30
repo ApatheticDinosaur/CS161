@@ -1,0 +1,78 @@
+<!--ToDo:
+In this assignment, you will be designing an interactive browser-based game for a 4-queen problem.  A reference site for this HW can be found under: http://www.eightqueen.becher-sundstroem.de/ (Links to an external site.) (select Manual for Modus and 4 X 4 for boardsize)
+
+1)    Produce an initial 4 X 4 keyboard on your browser similar to diagram 1.1 with no queens in it.
+
+2)    Allow player to place or remove a (symbolic) queen object in any cell by selecting or re-selecting any of the 4 X 4 cells.
+
+3)  The rule of the game is that no two queens threaten each other. Thus, a solution requires that no two queens share the same row, column, or diagonal. One and only one queen can be placed in any row, any column, or any diagonal. See http://en.wikipedia.org/wiki/Eight_queens_puzzle (Links to an external site.) for more detail.
+
+4) Show a “violation of rules” prompt when a queen is placed in a cell that violates rules in (3) with regards to other placed queens on the game board.
+
+5) Once the player successfully places all the queens in the right cells,
+
+5.a) show the position of each queen in each column in an array form as shown in diagram 1.1 and
+
+5.b) display a congratulation prompt.
+
+6) Provide a reset button to allow players to reset and remove all queens from the game board.
+
+7)    Use Javascript and HTML only for this assignment.
+
+*)    Your startup page should be named index.html and
+
+8.a) it should contain a short “how to play” instruction and
+
+8.b) indicate what browser and version the game has been tested to run well.
+
+9)    Name the folder containing all your script as yourlastname_firstname, zip the folder, and upload it to your Canvas account by the due date.
+
+10)   Upon unzipping your zipped assignment one should be to able view and run your game in browser without editing your work.
+
+ Optional Bonus part :( +20/100)
+
+Provide a board size choice from 4 X 4 to 8 X 8 as shown below . Upon selecting the board size, your game shall display the matching size board for players to place queens in accordance with (2) – (5).-->
+<HTML>
+<TITLE>8Queens</TITLE>
+<BODY>
+<DIV>Toolbar
+	<select>
+		<option>4x4</option>
+		<option>5x5</option>
+		<option>6x6</option>
+		<option>7x7</option>
+		<option>8x8</option>
+	</select>
+</DIV>
+<DIV>GameArea
+	<TABLE>
+		<TBODY>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+			</tr>
+		</TBODY>
+	</TABLE>
+</DIV>
+</BODY>
+</HTML>
