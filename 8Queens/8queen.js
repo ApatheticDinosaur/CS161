@@ -25,6 +25,16 @@ function changeSize(selection){
 
 
 function buildBoard(n){
+	var num = n;
 	document.getElementById("board").innerHTML = "";
-	document.getElementById("test").innerHTML = "";
+	var boardString = "";
+	for(i=0;i<n;i++){
+		boardString += "<tr>";
+		for(j=0;j<n;j++){
+			boardString += "<td class='blue'>"+i+"</td>";
+			num++;
+		}
+		boardString += "</tr>"
+	}
+	document.getElementById("board").innerHTML = boardString;
 }
