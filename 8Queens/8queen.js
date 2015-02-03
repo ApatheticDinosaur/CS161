@@ -10,7 +10,7 @@
 * @param selection - is the item from the list selected.
 */
 function changeSize(selection){
-	buildBoard(selection.selectedIndex + 1);
+	buildBoard(selection.selectedIndex + 4);
 }
 
 /* Clear and constructs a board of specified size
