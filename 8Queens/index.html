@@ -46,13 +46,15 @@ In this assignment, you will be designing an interactive browser-based game for 
 		<DIV>This game has been tested on Chrome Version 40.0.2214.93 m</DIV>
 	</DIV>
 	<DIV>
-	<select>
-		<option>4x4</option>
-		<option>5x5</option>
-		<option>6x6</option>
-		<option>7x7</option>
-		<option>8x8</option>
-	</select>
+		<form id="formSize" name="formSize" action>
+			<select id="size" name="size" onchange="changeSize(form.size)">
+				<option>4x4</option>
+				<option>5x5</option>
+				<option>6x6</option>
+				<option>7x7</option>
+				<option>8x8</option>
+			</select>
+		</form>
 	</DIV>
 	<DIV>GameArea
 		<TABLE>
