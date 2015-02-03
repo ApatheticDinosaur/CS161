@@ -1,6 +1,12 @@
-//javascript functions here
+/** Javascript for the 8queens assignment CS 161
+@Author			- Thorpe, David-Eric 3554
+@Author			- 
+@Author			- 
+@Class  		- Programing Project, CS161-2
+@Date modified	- 2nd Feb 2015
+*/
 
-/* changes the size of board based on radial selection
+/* Changes the size of board based on radial selection
 * @param selection - is the item from the list selected.
 */
 function changeSize(selection){
@@ -25,7 +31,6 @@ function changeSize(selection){
 	buildBoard(i);
 }
 
-
 /* Clear and constructs a board of specified size
 * @param n - is the size of board to be constructed.
 */
@@ -41,7 +46,6 @@ function buildBoard(n){
 				boardString += "<td class='yellow' />";
 			}
 			isBlue=isBlue*-1;
-
 		}
 		if(n%2==0) isBlue=isBlue*-1;
 		boardString += "</tr>"
