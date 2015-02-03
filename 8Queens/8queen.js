@@ -1,5 +1,8 @@
 //javascript functions here
 
+/* changes the size of board based on radial selection
+* @param selection - is the item from the list selected.
+*/
 function changeSize(selection){
 	var i;
 	switch(selection.selectedIndex){
@@ -23,7 +26,9 @@ function changeSize(selection){
 }
 
 
-
+/* Clear and constructs a board of specified size
+* @param n - is the size of board to be constructed.
+*/
 function buildBoard(n){
 	var boardString = "";
 	var isBlue = 1;
