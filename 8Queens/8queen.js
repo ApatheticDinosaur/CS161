@@ -25,15 +25,20 @@ function changeSize(selection){
 
 
 function buildBoard(n){
-	var num = n;
-	document.getElementById("board").innerHTML = "";
 	var boardString = "";
+	var isBlue = 1;
 	for(i=0;i<n;i++){
 		boardString += "<tr>";
 		for(j=0;j<n;j++){
-			boardString += "<td class='blue'>"+i+"</td>";
-			num++;
+			if(isBlue==1){
+				boardString += "<td class='blue' />";
+			}else{
+				boardString += "<td class='yellow' />";
+			}
+			isBlue=isBlue*-1;
+
 		}
+		if(n%2==0) isBlue=isBlue*-1;
 		boardString += "</tr>"
 	}
 	document.getElementById("board").innerHTML = boardString;
