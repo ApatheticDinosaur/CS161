@@ -10,25 +10,7 @@
 * @param selection - is the item from the list selected.
 */
 function changeSize(selection){
-	var i;
-	switch(selection.selectedIndex){
-		case 0:
-			i = 4;
-			break;
-		case 1:
-			i = 5;
-			break;
-		case 2:
-			i = 6;
-			break;
-		case 3:
-			i = 7;
-			break;
-		case 4:
-			i = 8;
-			break;
-	}
-	buildBoard(i);
+	buildBoard(selection.selectedIndex + 1);
 }
 
 /* Clear and constructs a board of specified size
