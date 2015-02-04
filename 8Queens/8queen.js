@@ -1,9 +1,8 @@
 /** Javascript for the 8queens assignment CS 161
 @Author			- Thorpe, David-Eric 3554
-@Author			- 
-@Author			- 
-@Author			- 
-@Author			- 
+@Author			- Prahandono, Garindra
+@Author			- Wang, Andy
+@Author			- Bariana, Taminder
 @Class  		- Programing Project, CS161-1
 @Date modified	- 2nd Feb 2015
 */
@@ -25,9 +24,9 @@ function buildBoard(n){
 		boardString += "<tr>";
 		for(j=0;j<n;j++){
 			if(isBlue==1){
-				boardString += "<td class='blue' />";
+				boardString += "<td class='blue' background-color='blue' width='50px' height='50px' />";
 			}else{
-				boardString += "<td class='yellow' />";
+				boardString += "<td class='yellow' background-color='yellow' width='50px' height='50px' />";
 			}
 			isBlue=isBlue*-1;
 		}
